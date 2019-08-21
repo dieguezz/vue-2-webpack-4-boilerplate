@@ -34,7 +34,7 @@ const webpackConfig = merge(commonConfig, {
             })
         ],
         splitChunks: {
-            chunks: 'all',
+            chunks: 'async',
             maxInitialRequests: Infinity,
             minSize: 0,
             cacheGroups: {

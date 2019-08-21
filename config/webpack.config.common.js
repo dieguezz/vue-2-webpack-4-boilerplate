@@ -45,14 +45,6 @@ const webpackConfig = {
                     { loader: 'sass-loader', options: { sourceMap: isDev } }
                 ]
             },
-            {
-                test: /\.sass$/,
-                use: [
-                    isDev ? 'vue-style-loader' : MiniCSSExtractPlugin.loader,
-                    { loader: 'css-loader', options: { sourceMap: isDev } },
-                    { loader: 'sass-loader', options: { sourceMap: isDev } }
-                ]
-            }
         ]
     },
     plugins: [
